@@ -1,0 +1,17 @@
+Ik heb op dit moment een 1 kolom's versie gemaakt van de verhalen site.
+Door te schalen op PC is zichtbaar hoe het er ongeveer op telefoon-formaat uit moet komen te zien.
+
+De navigatiebalk daarintegen is voor de dekstop versie.
+Ik heb deze nog niet aangepast voor telefoon-formaat omdat ik twijfel over de aanpak.
+Ik neig op dit moment naar een hamburger menu maar bekijk de mogelijkheden om het anders
+aan te pakken.
+
+De HTML is semantisch correct. De markup plugin op brackets gaf op de index.html 1 slordigheid aan op regel 41:
+" Section lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all sections.	<section class="verhaalVak"> "
+Ik heb wat geexperimenteerd maar kreeg voor nu niet het gewenste resultaat, dus heb de slordigheid erin gelaten.
+Verder bij beide .html bestanden geen errors.
+
+Ik heb bij de CSS geprobeerd zo min mogelijk classes te gebruiken, maar het is mij niet gelukt om ze
+volledig te vermijden.
+
+Ik kijk uit naar de feedback en hoop zo snel mogelijk verder te kunnen werken aan de site!
