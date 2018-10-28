@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zoekresultaten (4)</title>
+    <link rel="stylesheet" href="CSS/resultatenpagina.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    
+<!--S1: Header en navigatie-->
+    <header>
+        <nav>
+            <a href="index.html"><img src="ICONS/logo.svg" alt="Het transavia stories logo"></a>
+            <ul>
+                <li><a href="almijnlikes.html"><img src="ICONS/notificatieBubbel.svg" alt="Notificatie bubbel met een 1 erin"><span>Al mijn likes</span><img src="ICONS/alllikes.svg" alt="Navigatie button naar al mijn likes pagina"></a></li>
+                <li><a href="laterlezen.html"><span>Later lezen</span><img src="ICONS/allbookmarks.svg" alt="Navigatie button naar later lezen pagina"></a></li>
+                <li><a href="account.html"><span>Account</span><img src="ICONS/notloggedin.svg" alt="Navigatie button naar account pagina"></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<!--S2: Alles over zoekbalk, filter en willekeurig-->
+    <main>
+        <h1>4 resultaten</h1>
+        <section title="Specificeer of willekeurig">
+            <h2>Niet wat je zocht? Zoek opnieuw!</h2>
+            <form>
+                <label>Zoek op trefwoorden
+                    <input type="text" placeholder="bijv. bus...">
+                </label>
+                <button>zoek</button>
+            </form>
+            <p>of</p>
+            <button type="button" id="voegFiltersToe">Voeg filters toe<img src="ICONS/collapsearrow.svg" alt="Een pijl" class="turnArrow"></button>
+            <section class="hideFilters">
+                <form action="zoekresultaten.html">
+                    <fieldset>
+                        <legend>Schrijfstijl</legend>
+                        <label>
+                            <input type="checkbox">
+                            Doen alsof (25)</label>
+                        <label>
+                            <input type="checkbox">
+                            Speels (20)</label>
+                        <label>
+                            <input type="checkbox">
+                            Verhalend (17)</label>
+                        <label>
+                            <input type="checkbox">
+                            Bekende personen (17)</label>
+                        <label>
+                            <input type="checkbox">
+                            Poëzie (9)</label>
+                        <label>
+                            <input type="checkbox">
+                            Literatuur (6)</label>
+                        <label>
+                            <input type="checkbox">
+                            Grof (4)</label>
+                        <label>
+                            <input type="checkbox">
+                            Zweverig (3)</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Leesduur</legend>
+                        <label>
+                            <input type="checkbox">
+                            1 minuut of korter (8)</label>
+                        <label>
+                            <input type="checkbox">
+                            2 minuten (19)</label>
+                        <label>
+                            <input type="checkbox">
+                            3 minuten (27)</label>
+                        <label>
+                            <input type="checkbox">
+                            4 minuten (27)</label>
+                        <label>
+                            <input type="checkbox">
+                            5 minuten of langer (20)</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Aantal likes</legend>
+                        <label>Hoeveel likes moet het verhaal minimaal hebben?</label>
+                        <input type="range" name="aantalLikes" value="0" min="0" max="1000" oninput="gekozenAantal.value = aantalLikes.value">
+                        <output name="gekozenAantal">0</output>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Aantal likes</legend>
+                        <label>Hoeveel MB mag het verhaal maximaal zijn?</label>
+                        <input type="range" name="aantalMBs" value="5" min="0" max="25" oninput="gekozenMBs.value = aantalMBs.value">
+                        <output name="gekozenMBs">5</output>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Sorteren van</legend>
+                        <label>
+                            <input type="radio" name="sorterenVan" checked>
+                            Hoog naar laag</label>
+                        <label>
+                            <input type="radio" name="sorterenVan">
+                            Laag naar hoog</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Sorteren op</legend>
+                        <label>
+                            <input type="radio" name="sorterenOp" checked>
+                            Aantal likes</label>
+                        <label>
+                            <input type="radio" name="sorterenOp">
+                            Bestandsgrootte</label>
+                        <label>
+                            <input type="radio" name="sorterenOp">
+                            Alfabetische volgorde</label>
+                    </fieldset>
+                    <button>Bekijk 4 resultaten</button>
+                </form>
+            </section>
+            <p>Je kunt je ook laten verrassen...</p>
+            <button>Verras me!</button>
+        </section>
+
+<!--S3: Alles over de verhalen-->
+        <h2>Topresultaat</h2>
+        <section>
+            <article>
+                <a href="">
+                    <div><img src="STORIES/Stijloefeningen(21)-Sonnet.jpg" alt="Vormgegeven verhaal genaamd Sonnet">
+                    </div>
+                    <h3>Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h3>
+                </a>
+                <section>
+                    <section>
+                        <img src="ICONS/schrijfstijl.svg" alt="Icoon voor Schrijfstijl">
+                        <p>Poëzie</p>
+                    </section>
+                    <section>
+                        <img src="ICONS/clock.svg" alt="Icoon voor Leestijd">
+                        <p>2 min</p>
+                    </section>
+                    <section>
+                        <button>Download<img src="ICONS/downloadarrow.svg" alt="Pijltje binnen de downloadbutton"></button>
+                        <button><img src="ICONS/bookmark.svg" alt="Icoon voor het toevoegen aan later lezen">
+                            <img src="ICONS/greenBall.svg" alt="Groene bal, niet zichtbaar, word gebruikt bij microinteractie"></button>
+                        <button><img src="ICONS/heart.svg" alt="Icoon voor het liken van het verhaal"><img src="ICONS/heartchecked.svg" alt="Hartje met vinkje, niet zichtbaar, word gebruikt bij microinteractie"><img src="ICONS/pinkBall.svg" alt="Roze bal, niet zichtbaar, word gebruikt bij microinteractie"></button>
+                    </section>
+                    <section>
+                        <p>bestandsgrootte: 8MB</p>
+                        <p>aantal likes: 627</p>
+                    </section>
+                </section>
+            </article>
+        </section>
+        <h2>Andere resultaten</h2>
+        <section>
+            <article>
+                <a href="">
+                    <div><img src="STORIES/stoned.png" alt="Vormgegeven verhaal genaamd Stoned">
+                    </div>
+                    <h3>Stoned</h3>
+                </a>
+                <section>
+                    <section>
+                        <img src="ICONS/schrijfstijl.svg" alt="Icoon voor Schrijfstijl">
+                        <p>Zweverig</p>
+                    </section>
+                    <section>
+                        <img src="ICONS/clock.svg" alt="Icoon voor Leestijd">
+                        <p>5 min</p>
+                    </section>
+                    <section>
+                        <button>Download<img src="ICONS/downloadarrow.svg" alt="Pijltje binnen de downloadbutton"></button>
+                        <button><img src="ICONS/bookmark.svg" alt="Icoon voor het toevoegen aan later lezen"></button>
+                        <button><img src="ICONS/heart.svg" alt="Icoon voor het liken van het verhaal"></button>
+                    </section>
+                    <section>
+                        <p>bestandsgrootte: 4.4MB</p>
+                        <p>aantal likes: 322</p>
+                    </section>
+                </section>
+            </article>
+            <article>
+                <a href="">
+                    <div><img src="STORIES/Tekengebied%201-100.jpg" alt="Vormgegeven verhaal genaamd Poepen">
+                    </div>
+                    <h3>Poepen</h3>
+                </a>
+                <section>
+                    <section>
+                        <img src="ICONS/schrijfstijl.svg" alt="Icoon voor Schrijfstijl">
+                        <p>Doen alsof</p>
+                    </section>
+                    <section>
+                        <img src="ICONS/clock.svg" alt="Icoon voor Leestijd">
+                        <p>4 min</p>
+                    </section>
+                    <section>
+                        <button>Download<img src="ICONS/downloadarrow.svg" alt="Pijltje binnen de downloadbutton"></button>
+                        <button><img src="ICONS/bookmark.svg" alt="Icoon voor het toevoegen aan later lezen"></button>
+                        <button><img src="ICONS/heart.svg" alt="Icoon voor het liken van het verhaal"></button>
+                    </section>
+                    <section>
+                        <p>bestandsgrootte: 4.9MB</p>
+                        <p>aantal likes: 298</p>
+                    </section>
+                </section>
+            </article>
+            <article>
+                <a href="">
+                    <div><img src="STORIES/verhaal10.jpg" alt="Vormgegeven verhaal genaamd Droom">
+                    </div>
+                    <h3>Droom</h3>
+                </a>
+                <section>
+                    <section>
+                        <img src="ICONS/schrijfstijl.svg" alt="Icoon voor Schrijfstijl">
+                        <p>Zweverig</p>
+                    </section>
+                    <section>
+                        <img src="ICONS/clock.svg" alt="Icoon voor Leestijd">
+                        <p>2 min</p>
+                    </section>
+                    <section>
+                        <button>Download<img src="ICONS/downloadarrow.svg" alt="Pijltje binnen de downloadbutton"></button>
+                        <button><img src="ICONS/bookmark.svg" alt="Icoon voor het toevoegen aan later lezen"></button>
+                        <button><img src="ICONS/heart.svg" alt="Icoon voor het liken van het verhaal"></button>
+                    </section>
+                    <section>
+                        <p>bestandsgrootte: 6.3MB</p>
+                        <p>aantal likes: 249</p>
+                    </section>
+                </section>
+            </article>
+
+        </section>
+    </main>
+    
+<!--S4: Footer-->
+    <footer>
+        <p>Blok 1: WEB - Transavia Verhalenwebsite - Website gemaakt door Daan Kos, 500770599</p>
+    </footer>
+
+<script src="JAVASCRIPT/javascriptOverzichtpagina.js"></script>
+</body>
+
+</html>

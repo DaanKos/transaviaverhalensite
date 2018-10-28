@@ -1,0 +1,333 @@
+/* Algemene CSS */
+
+@font-face {
+    font-family: 'Nexa_Free_Light';
+    src: url('../FONTS/Nexa_Free_Light-webfont.woff2') format('woff2'),
+        url('../FONTS/Nexa_Free_Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa_Free_Bold';
+    src: url('../FONTS/Nexa_Free_Bold-webfont.woff2') format('woff2'),
+        url('../FONTS/Nexa_Free_Bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Algemeen */
+
+a,
+h1,
+h2,
+h3,
+button,
+legend {
+    font-family: Nexa_Free_Bold;
+}
+
+form,
+input,
+p,
+label {
+    font-family: Nexa_Free_Light;
+}
+
+body {
+    border: 0;
+    margin: 0 auto;
+    padding: 0;
+}
+
+main {
+    background-image: url(https://www.transavia.com/nl/-/media/Images/Public/Backgrounds/meet-transavia-1.jpg?h=833&amp;sc=1&amp;w=2000&amp;useCustomFunctions=1&amp;cropX=0&amp;cropY=1&amp;hash=050F8D81632D6832BB1A93936A374E3BFE69C21E);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-top: 4em;
+    width: 100%;
+}
+
+h1 {
+    background-color: #FFFFFF;
+    font-size: 1.5em;
+    margin: 0 auto;
+    padding-bottom: .1em;
+    padding-top: .1em;
+    text-align: center;
+}
+
+html {
+    height: 100%;
+}
+
+/* Einde algemene CSS */
+
+
+
+/* S1: Alles over header / navigatie */
+
+header {
+    align-content: flex-end;
+    background-color: #00D66C;
+    border: none;
+    display: flex;
+    height: 4em;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1.5em;
+    width: 100%;
+}
+
+header nav > a:first-of-type {
+    align-items: center;
+    display: flex;
+}
+
+header nav > a:first-of-type:focus {
+    background-color: #1E9162;
+    outline: none;
+}
+
+header nav > a:first-child img {
+    height: 2.75em;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    width: 40%;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: .3em;
+}
+
+header ul li a {
+    align-items: center;
+    color: #202020;
+    display: flex;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+header ul li a:focus {
+    outline: 2px solid #000000;
+}
+
+header ul li a img {
+    height: 2.5em;
+}
+
+header ul li span {
+    display: none;
+    margin: 0 .5em;
+}
+
+/* Einde S1 */
+
+
+
+/* S2: Alles over de inlog en aanmaak opties */
+
+button {
+    border-radius: 10em;
+    color: #FFFFFF;
+    display: block;
+    font-size: 1.25em;
+    height: 1.5em;
+    margin: 1em auto;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+section {
+    background-color: #FFFFFF;
+    border-radius: 1em;
+    box-sizing: border-box;
+    display: block;
+    margin: 0.5em auto;
+    padding: .5em;
+    width: 18em;
+}
+
+section:first-of-type {
+    height: 25em;
+}
+
+section:last-of-type {
+    height: 32.5em;
+}
+
+section h2 {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+form input {
+    border: 1px solid black;
+    border-radius: .5em;
+    display: block;
+    margin: .5em 0 1.5em 0;
+    padding: .5em .5em;
+    width: 90%;
+}
+
+form a {
+    display: block;
+    text-align: center;
+}
+
+form a:focus {
+    color: #1E9162;
+    outline: none;
+    transform: scale(1.1);
+    transition: .25s;
+    transition-timing-function: ease-in-out;
+}
+
+form input:focus {
+    border: 3px solid #000000;
+    height: 1.5em;
+    outline: none;
+    transition: .25s;
+    transition-timing-function: ease-in-out;
+}
+
+section:first-of-type button:focus {
+    background-color: #1E9162;
+    border-color: #1E9162;
+    transform: scale(1.1);
+    transition: .25s;
+    transition-timing-function: ease-in-out;
+}
+
+section:last-of-type button:focus {
+    background-color: #130147;
+    border-color: #130147;
+    transform: scale(1.1);
+    transition: .25s;
+    transition-timing-function: ease-in-out;
+}
+
+fieldset {
+    border: none;
+    border-radius: 1em;
+    margin: 1.5em 0;
+    padding: 1em .5em 1em .5em;
+    position: relative;
+}
+
+section:first-of-type fieldset:valid {
+    background-color: #00D66C;
+    background-color: rgba(0, 214, 108, .25);
+    transition: .25s;
+    transition-timing-function: ease-in-out;
+}
+
+section:last-of-type fieldset:valid {
+    background-color: #2800A0;
+    background-color: rgba(40, 0, 160, .25);
+    transition: .25s;
+    transition-timing-function: ease-in-out;
+}
+
+section:first-of-type button {
+    background-color: #00D66C;
+    border-color: #00D66C;
+}
+
+section:first-of-type input:valid {
+    border-color: #00D66C;
+    border-style: solid;
+}
+
+section:last-of-type input:valid {
+    border-color: #2800A0;
+    border-style: solid;
+}
+
+section:last-of-type button {
+    background-color: #2800A0;
+    border-color: #2800A0;
+}
+
+/* Einde S2 */
+
+
+
+/* S3: Footer */
+
+footer {
+    align-items: center;
+    background-color: #606060;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer p {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Einde S3 */
+
+
+
+/* CSS uitzonderingen vanaf tablet formaat (40em)  */
+
+@media screen and (min-width: 40em) {
+
+    /* S1: Alles over header / navigatie */
+    
+    nav ul {
+        width: 100%;
+    }
+
+    header ul li span {
+        display: block;
+        font-size: 1em;
+    }
+
+    header ul li a {
+        border-radius: 5em;
+        display: flex;
+    }
+
+    header ul li:nth-child(1) a {
+        background-color: #FF3268;
+        border: solid .1em #FF3268;
+        color: #FFFFFF;
+    }
+
+    header ul li:nth-child(2) a {
+        background-color: #2800A0;
+        border: solid .1em #2800A0;
+        color: #FFFFFF;
+    }
+
+    header ul li:nth-child(3) a {
+        background-color: #FFFFFF;
+        border: solid .1em #FFFFFF;
+        color: #00D66C;
+    }
+    
+    /* Einde S1 */
+}
+
+/* Einde CSS uitzonderingen vanaf tablet formaat */

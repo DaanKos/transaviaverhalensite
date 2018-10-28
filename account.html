@@ -1,63 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="overzichtspagina.css">
+    <title>Account</title>
+    <link rel="stylesheet" href="CSS/account.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+
+<!--S1: Header en navigatie-->
     <header>
         <nav>
-            <label>
-                <a href="index.html">Transavia Stories</a>
-            </label>
-            <label>
-                <a href="index.html">Overzichtspagina</a>
-            </label>
-            <label>
-                <a href="index.html">Verder lezen</a>
-            </label>
-            <label>
-                <a href="index.html">Opgeslagen verhalen</a>
-            </label>
-            <label>
-                <a class="actief" href="account.html">Account</a>
-            </label>
+            <a href="index.html"><img src="ICONS/logo.svg" alt="Het transavia stories logo"></a>
+            <ul>
+                <li><a href="almijnlikes.html"><span>Al mijn likes</span><img src="ICONS/alllikes.svg" alt="Navigatie button naar al mijn likes pagina"></a></li>
+                <li><a href="laterlezen.html"><span>Later lezen</span><img src="ICONS/allbookmarks.svg" alt="Navigatie button naar later lezen pagina"></a></li>
+                <li><a href="account.html"><span>Account</span><img src="ICONS/notloggedin.svg" alt="Navigatie button naar account pagina"></a></li>
+            </ul>
         </nav>
     </header>
-    <h1>Account</h1>
-    <section class="inlogForm">
-        <h2>Log in bij je account</h2>
-        <form>
-            <label> Emailadres of gebruikersnaam
-                <input type="text" placeholder="Vul hier uw emailadres of gebruikersnaam in...">
-            </label>
-            <label> Wachtwoord
-                <input type="password" placeholder="Vul hier uw wachtwoord in...">
-            </label>
-            <a href="">Wachtwoord vergeten?</a>
-            <button id="inlogButton">Inloggen</button>
-        </form>
-    </section>
-    <section class="aanmaakForm">
-        <h2>Of maak een account aan!</h2>
-        <form>
-            <label> Gebruikersnaam
-                <input type="text" placeholder="Vul hier uw gewenste gebruikersnaam in...">
-            </label>
-            <label> Emailadres
-                <input type="email" placeholder="Vul hier uw emailadres in...">
-            </label>
-            <label> Wachtwoord
-                <input type="password" placeholder="Vul hier uw  gewenste wachtwoord in...">
-            </label>
-            <label> Wachtwoord herhalen
-                <input type="password" placeholder="Herhaal het wachtwoord...">
-            </label>
-            <button id="registerButton">Account aanmaken</button>
-        </form>
-    </section>
 
+<!--S2: Account pagina, inlog en aanmaak opties-->
+    <main>
+        <h1>Account</h1>
+        <section>
+            <h2>Log in bij je account</h2>
+            <form>
+                <fieldset>
+                    <label> Emailadres of gebruikersnaam
+                        <input type="text" required minlength="1" placeholder="Vul hier uw emailadres of gebruikersnaam in...">
+                    </label>
+                    <label> Wachtwoord
+                        <input type="password" required minlength="8" placeholder="Vul hier uw wachtwoord in...">
+                    </label>
+                </fieldset>
+                <a href="">Wachtwoord vergeten?</a>
+                <button type="submit">Inloggen</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Of maak een account aan!</h2>
+            <form>
+                <fieldset>
+                    <label> Gebruikersnaam
+                        <input type="text" required placeholder="Vul hier uw gewenste gebruikersnaam in...">
+                    </label>
+                    <label> Emailadres
+                        <input type="email" required placeholder="Vul hier uw emailadres in...">
+                    </label>
+                    <label> Wachtwoord (minimaal 8 tekens)
+                        <input type="password" required minlength="8" placeholder="Vul hier uw gewenste wachtwoord in...">
+                    </label>
+                    <label> Wachtwoord herhalen
+                        <input type="password" required minlength="8" placeholder="Herhaal het wachtwoord...">
+                    </label>
+                </fieldset>
+                <button type="submit">Account aanmaken</button>
+            </form>
+        </section>
+    </main>
+    
+<!--S3: Footer-->   
+    <footer>
+        <p>Blok 1: WEB - Transavia Verhalenwebsite - Website gemaakt door Daan Kos, 500770599</p>
+    </footer>
+    
 </body>
+
 </html>
